@@ -50,3 +50,15 @@ function calculateSpeed() {
     image.src = imageApi;
   }
 }
+
+const init = async () => {
+  info.innerHTML = "Testing...";
+  startTime = new Date().getTime();
+  image.src = imageApi;
+};
+
+window.onload = () => {
+  for (let i = 0; i < numTests; i++) {
+    init();
+  }
+};
